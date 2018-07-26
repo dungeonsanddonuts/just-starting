@@ -50,7 +50,7 @@
     </style>
       </head>
               <body> 
-                 <h1>Dungeons and Dickinsons </h1>
+                <div id = "empty"> <h1>Dungeons and Dickinsons </h1>
                   <table class="center">
                     <thead> 
                       <tr> 
@@ -61,8 +61,9 @@
                        </tr>
                      </thead>
                  </table>
-                 <h2> 
-                 <h2>
+                 <button id =penguin-button> Penguin Takeover!!! 
+                </button>
+                
                    
                    <p>  <img id ="penguin" src ="https://image.spreadshirtmedia.com/image-server/v1/compositions/1100085871/views/1,width=650,height=650,appearanceId=231,version=1527147233/penguin-dungeons-and-dragons-dd-d20-penguins-cute-animals-dolphin-adorable-fantasy-dragon-dolphin-unicorn-dice-mom-dad-gift-dungeon-work-role-play-pathfinder-rpg-tabletop-boardgames-boardgame-geek-gift-nerdy-gift-nerd-gift.jpg" alt= "nerdy penguin"> </img>
                    I am a self acknowledged geek. I enjoy video games, board games, 
@@ -86,5 +87,13 @@
                
                   
                     <h2> </h2>
+ </div>
+                <script>
+                  var penguinAttack = function() {
+                  $("h1").remove();
+                  }
+                  
+                    $("#penguin-button").on("click", function() {penguinAttack();};
+              </script>
              </body>
       </html> 
