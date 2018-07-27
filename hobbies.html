@@ -61,8 +61,7 @@
                        </tr>
                      </thead>
                  </table>
-                 <button id =penguin-button> Penguin Takeover!!! 
-                </button>
+                
                 
                    
                    <p>  <img id ="penguin" src ="https://image.spreadshirtmedia.com/image-server/v1/compositions/1100085871/views/1,width=650,height=650,appearanceId=231,version=1527147233/penguin-dungeons-and-dragons-dd-d20-penguins-cute-animals-dolphin-adorable-fantasy-dragon-dolphin-unicorn-dice-mom-dad-gift-dungeon-work-role-play-pathfinder-rpg-tabletop-boardgames-boardgame-geek-gift-nerdy-gift-nerd-gift.jpg" alt= "nerdy penguin"> </img>
@@ -89,12 +88,24 @@
                     <h2> </h2>
 
  </div>
+ <button id =penguin-button> Penguins Takeover!!! 
+                </button>
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
 </script>
     
                 <script>
                  var $penguinAttack = function() {
                   $("#empty").remove();
+                    $("body").on("click", function(event) {
+            console.log(event);
+            var $img = $("<img>")
+                .attr("src", "https://i0.wp.com/www.musicmarketingmanifesto.com/wp-content/uploads/2012/05/Penguin.jpg);
+                .width(100);
+                .css("position", "absolute");
+                .css("top", event.pageY + "px");
+                .css("left", event.pageX + "px");
+                .appendTo("body"); 
+                    };
                  
         });
                    
@@ -102,15 +113,7 @@
                   
                     $("#penguin-button").on("click", function () {
                       $penguinAttack();
-                        $("body").on("click", function(event) {
-            console.log(event);
-            var $img = $("<img>")
-                .attr("src", "https://i0.wp.com/www.musicmarketingmanifesto.com/wp-content/uploads/2012/05/Penguin.jpg")
-                .width(100)
-                .css("position", "absolute")
-                .css("top", event.pageY + "px")
-                .css("left", event.pageX + "px")
-                .appendTo("body");
+                       
                     }); 
         
               </script>
