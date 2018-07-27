@@ -94,7 +94,17 @@
     
                 <script>
                  var $penguinAttack = function() {
-                  $("h1").remove();
+                  $("#empty").remove();
+                   $("body").on("click", function(event) {
+            console.log(event);
+            var $img = $("<img>")
+                .attr("src", "https://i0.wp.com/www.musicmarketingmanifesto.com/wp-content/uploads/2012/05/Penguin.jpg")
+                .width(100)
+                .css("position", "absolute")
+                .css("top", event.pageY + "px")
+                .css("left", event.pageX + "px")
+                .appendTo("body");
+        });
                   }; 
              
                   
