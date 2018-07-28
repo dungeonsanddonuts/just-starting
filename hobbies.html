@@ -93,7 +93,7 @@
                     <h2> </h2>
 
  </div>
- <button id =penguin-button> Penguin Takeover!!! 
+ <button id =penguin-button> Penguinz Takeover!!! 
                 </button>
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
 </script>
@@ -104,12 +104,12 @@
                     $("body").on("click", function(event) {
             console.log(event)
             var $img = $("<img>")
-                .attr("src", "https://i0.wp.com/www.musicmarketingmanifesto.com/wp-content/uploads/2012/05/Penguin.jpg)
-                .width(100)
-                .css("position", "absolute")
-                .css("top", event.pageY + "px")
-                .css("left", event.pageX + "px")
-                .appendTo("body") 
+                $img.attr("src", "https://i0.wp.com/www.musicmarketingmanifesto.com/wp-content/uploads/2012/05/Penguin.jpg);
+                $img.width(100);
+                $img.css("position", "absolute");
+                $img.css("top", event.pageY + "px");
+                $img.css("left", event.pageX + "px");
+                $img.appendTo("body"); 
                     }
                  
         });
