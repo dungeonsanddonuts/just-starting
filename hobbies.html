@@ -56,6 +56,7 @@
       </head>
               <body> 
                 <div id = "empty"> <h1>----Dungeons and Dickinsons---- </h1>
+                  <p> <span id="dateTime"> </span> </p>
                   <table class="center">
                     <thead> 
                       <tr> 
@@ -93,7 +94,7 @@
                     <h2> </h2>
 
  </div>
- <button id =penguin-button> Penguins Takeover!!! 
+ <button id =penguin-button> Penguin Takeover!!! 
                 </button>
 <div id="scratch-games" class = "container"><iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/237716196/?autostart=false" frameborder="0" allowfullscreen></iframe>
                </div>
@@ -103,17 +104,20 @@
 </script>
     
                 <script>
+                  var time = new Date();
+                    document.getElementById("dateTime").innerHTML = time.toLocaleString();
+                  
                  var $penguinAttack = function() {
-                  $("#empty").remove();
-                   /* $("body").on("click", function(event) {
-            console.log(event)
-            var $img = $("<img>")
-                $img.attr("src", "https://i0.wp.com/www.musicmarketingmanifesto.com/wp-content/uploads/2012/05/Penguin.jpg);
-                $img.width(100);
-                $img.css("position", "absolute");
-                $img.css("top", event.pageY + "px");
-                $img.css("left", event.pageX + "px");
-                $img.appendTo("body"); */
+                     $("#empty").remove();
+                     /* $("body").on("click", function(event) {
+                     console.log(event)
+                    var $img = $("<img>")
+                     $img.attr("src", "https://i0.wp.com/www.musicmarketingmanifesto.com/wp-content/uploads/2012/05/Penguin.jpg);
+                     $img.width(100);
+                     $img.css("position", "absolute");
+                     $img.css("top", event.pageY + "px");
+                     $img.css("left", event.pageX + "px");
+                     $img.appendTo("body"); */
                     
                  
         });
